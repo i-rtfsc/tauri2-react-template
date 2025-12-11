@@ -1,0 +1,147 @@
+{
+  "app": {
+    "name": "Tauri React 模板",
+    "title": "Tauri 2 + React 模板",
+    "toggleTheme": "切换主题",
+    "notifications": "通知"
+  },
+  "nav": {
+    "home": "首页",
+    "settings": "设置",
+    "users": "用户",
+    "components": "组件"
+  },
+  "sidebar": {
+    "doubleClickToExpand": "双击展开侧边栏",
+    "doubleClickToCollapse": "双击收起侧边栏"
+  },
+  "home": {
+    "title": "首页",
+    "description": "欢迎使用您的新 Tauri 应用",
+    "dashboardTitle": "仪表盘",
+    "welcomeBack": "欢迎回来，管理员",
+    "actions": {
+      "viewReports": "查看报告"
+    },
+    "kpis": {
+      "totalRevenue": "总收入",
+      "totalRevenueChange": "相比上个月增长 20.1%",
+      "subscriptions": "订阅数",
+      "subscriptionsChange": "相比上个月增长 180.1%",
+      "sales": "销售量",
+      "salesChange": "相比上个月增长 19%",
+      "activeNow": "当前在线",
+      "activeNowChange": "较上一小时增加 201"
+    },
+    "overview": {
+      "title": "概览",
+      "description": "本年度每月营收拆解。"
+    },
+    "recentSales": {
+      "title": "最近销售",
+      "description": "本月已完成 265 笔销售。"
+    },
+    "chart": {
+      "months": {
+        "jan": "1月",
+        "feb": "2月",
+        "mar": "3月",
+        "apr": "4月",
+        "may": "5月",
+        "jun": "6月",
+        "jul": "7月"
+      }
+    }
+  },
+  "settings": {
+    "title": "设置",
+    "description": "配置应用偏好设置",
+    "theme": "切换主题",
+    "language": "切换语言",
+    "general": "通用",
+    "account": "账户",
+    "appearance": "外观",
+    "notifications": "通知",
+    "advanced": "高级",
+    "about": "关于",
+    "generalDescription": "配置全局应用程序行为",
+    "launchOnStartup": "开机启动",
+    "launchOnStartupDesc": "登录时自动启动应用",
+    "autoUpdates": "自动更新",
+    "autoUpdatesDesc": "自动下载并安装更新",
+    "hardwareAcceleration": "硬件加速",
+    "hardwareAccelerationDesc": "使用 GPU 渲染图形。如果遇到故障请禁用",
+    "appearanceDescription": "自定义应用程序的外观",
+    "themeMode": "主题模式",
+    "themeModeDesc": "选择您偏好的界面风格",
+    "light": "浅色",
+    "dark": "深色",
+    "system": "跟随系统",
+    "reducedMotion": "减少动画",
+    "reducedMotionDesc": "最小化动画以获得更简洁的体验",
+    "accountDescription": "管理您的账户设置和偏好",
+    "profileInfo": "个人资料",
+    "profileInfoDesc": "此信息将公开显示",
+    "username": "用户名",
+    "email": "邮箱",
+    "saveChanges": "保存更改",
+    "session": "会话",
+    "signOut": "退出登录",
+    "signOutDesc": "在此设备上退出您的账户",
+    "logOut": "退出",
+    "advancedDescription": "开发者工具和系统维护",
+    "applicationLogs": "应用日志",
+    "applicationLogsDesc": "查看本地日志文件以进行故障排查",
+    "openFolder": "打开文件夹",
+    "databaseHealth": "数据库健康",
+    "databaseHealthDesc": "验证 SQLite 连接状态",
+    "checkConnection": "检查连接",
+    "dangerZone": "危险区域",
+    "dangerZoneDesc": "不可逆操作",
+    "resetDatabase": "重置数据库",
+    "resetDatabaseDesc": "清除所有本地数据并重置应用状态",
+    "resetData": "重置数据",
+    "comingSoon": "即将推出",
+    "underConstruction": "此部分正在建设中",
+    "openFolderSuccess": "日志文件夹已打开",
+    "openFolderError": "无法打开日志文件夹"
+  },
+  "users": {
+    "title": "用户管理",
+    "actions": {
+      "add": "新增用户"
+    },
+    "dialog": {
+      "title": "创建新用户",
+      "description": "将新用户添加到系统。"
+    },
+    "form": {
+      "username": "用户名",
+      "usernamePlaceholder": "zhangsan",
+      "email": "邮箱",
+      "emailPlaceholder": "zhangsan@example.com",
+      "submit": "创建用户",
+      "submitting": "创建中...",
+      "success": "用户创建成功",
+      "error": "创建用户失败",
+      "validation": {
+        "usernameMin": "用户名至少需要 2 个字符",
+        "emailInvalid": "邮箱格式不正确"
+      }
+    },
+    "table": {
+      "columns": {
+        "user": "用户",
+        "role": "角色",
+        "joined": "加入时间"
+      },
+      "actions": {
+        "openMenu": "打开菜单",
+        "delete": "删除",
+        "deleteSuccess": "用户已删除",
+        "deleteError": "删除失败：{{message}}"
+      },
+      "loading": "用户加载中..."
+    }
+  }
+}

@@ -1,0 +1,131 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Light Theme - Neutral & Soft (Zinc-inspired) */
+    /* Background: Light neutral gray to reduce glare */
+    --background: 0 0% 96%; 
+    --foreground: 240 5% 26%; /* Soft Charcoal - Easy on eyes */
+    
+    /* Cards: Pure white for depth */
+    --card: 0 0% 100%;
+    --card-foreground: 240 5% 26%;
+    
+    /* Popovers */
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 5% 26%;
+    
+    /* Primary: Clear Blue */
+    --primary: 221 83% 53%;
+    --primary-foreground: 0 0% 100%;
+    
+    /* Secondary: Very light neutral */
+    --secondary: 240 5% 96%;
+    --secondary-foreground: 240 5% 26%;
+    
+    /* Muted */
+    --muted: 240 5% 96%;
+    --muted-foreground: 240 4% 46%;
+    
+    /* Accent */
+    --accent: 240 5% 96%;
+    --accent-foreground: 240 5% 26%;
+    
+    /* Destructive */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    
+    /* Borders */
+    --border: 240 6% 90%;
+    --input: 240 6% 90%;
+    --ring: 221 83% 53%;
+    
+    /* Radius - Keeping original value for compatibility */
+    --radius: 0.75rem;
+    
+    /* Layout Colors - Light */
+    --sidebar-background: 0 0% 96%;
+    --sidebar-foreground: 240 5% 26%;
+    --sidebar-border: 240 6% 90%;
+  }
+
+  .dark {
+    /* Dark Theme - Softer Gray (Lighter than before) */
+    /* Background: Lighter gray to reduce contrast strain */
+    --background: 240 6% 20%;
+    --foreground: 240 5% 90%; /* Off-white text */
+    
+    /* Cards: Lighter than background */
+    --card: 240 6% 25%;
+    --card-foreground: 240 5% 90%;
+    
+    /* Popovers */
+    --popover: 240 6% 25%;
+    --popover-foreground: 240 5% 90%;
+    
+    /* Primary: Blue */
+    --primary: 217 91% 60%;
+    --primary-foreground: 0 0% 100%;
+    
+    /* Secondary */
+    --secondary: 240 4% 28%;
+    --secondary-foreground: 240 5% 90%;
+    
+    /* Muted */
+    --muted: 240 4% 28%;
+    --muted-foreground: 240 5% 65%;
+    
+    /* Accent */
+    --accent: 240 4% 28%;
+    --accent-foreground: 240 5% 90%;
+    
+    /* Destructive */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    
+    /* Borders */
+    --border: 240 4% 30%;
+    --input: 240 4% 30%;
+    --ring: 217 91% 60%;
+    
+    /* Layout Colors - Dark */
+    --sidebar-background: 240 6% 20%;
+    --sidebar-foreground: 240 5% 90%;
+    --sidebar-border: 240 4% 30%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    overscroll-behavior: none;
+    cursor: default;
+  }
+  
+  ::selection {
+    @apply bg-primary/20 text-primary;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-background/70 backdrop-blur-xl border border-white/20 shadow-glass supports-[backdrop-filter]:bg-background/60;
+  }
+  .dark .glass {
+    @apply bg-background/70 border-white/10;
+  }
+  
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}

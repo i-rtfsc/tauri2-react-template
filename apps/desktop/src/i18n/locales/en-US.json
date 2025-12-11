@@ -1,0 +1,147 @@
+{
+  "app": {
+    "name": "Tauri React Template",
+    "title": "Tauri 2 + React Template",
+    "toggleTheme": "Toggle theme",
+    "notifications": "Notifications"
+  },
+  "nav": {
+    "home": "Home",
+    "settings": "Settings",
+    "users": "Users",
+    "components": "Components"
+  },
+  "sidebar": {
+    "doubleClickToExpand": "Double click to expand sidebar",
+    "doubleClickToCollapse": "Double click to collapse sidebar"
+  },
+  "home": {
+    "title": "Home",
+    "description": "Welcome to your new Tauri application",
+    "dashboardTitle": "Dashboard",
+    "welcomeBack": "Welcome back, Admin",
+    "actions": {
+      "viewReports": "View Reports"
+    },
+    "kpis": {
+      "totalRevenue": "Total Revenue",
+      "totalRevenueChange": "+20.1% from last month",
+      "subscriptions": "Subscriptions",
+      "subscriptionsChange": "+180.1% from last month",
+      "sales": "Sales",
+      "salesChange": "+19% from last month",
+      "activeNow": "Active Now",
+      "activeNowChange": "+201 since last hour"
+    },
+    "overview": {
+      "title": "Overview",
+      "description": "Monthly revenue breakdown for the current year."
+    },
+    "recentSales": {
+      "title": "Recent Sales",
+      "description": "You made 265 sales this month."
+    },
+    "chart": {
+      "months": {
+        "jan": "Jan",
+        "feb": "Feb",
+        "mar": "Mar",
+        "apr": "Apr",
+        "may": "May",
+        "jun": "Jun",
+        "jul": "Jul"
+      }
+    }
+  },
+  "settings": {
+    "title": "Settings",
+    "description": "Configure your application preferences",
+    "theme": "Toggle theme",
+    "language": "Toggle language",
+    "general": "General",
+    "account": "Account",
+    "appearance": "Appearance",
+    "notifications": "Notifications",
+    "advanced": "Advanced",
+    "about": "Help & About",
+    "generalDescription": "Configure global application behavior",
+    "launchOnStartup": "Launch on Startup",
+    "launchOnStartupDesc": "Automatically start the app when you log in",
+    "autoUpdates": "Auto Updates",
+    "autoUpdatesDesc": "Download and install updates automatically",
+    "hardwareAcceleration": "Hardware Acceleration",
+    "hardwareAccelerationDesc": "Use GPU to render graphics. Disable if you experience glitches",
+    "appearanceDescription": "Customize the look and feel of the application",
+    "themeMode": "Theme Mode",
+    "themeModeDesc": "Select your preferred interface style",
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System",
+    "reducedMotion": "Reduced Motion",
+    "reducedMotionDesc": "Minimize animations for a simpler experience",
+    "accountDescription": "Manage your account settings and preferences",
+    "profileInfo": "Profile Info",
+    "profileInfoDesc": "This information will be displayed publicly",
+    "username": "Username",
+    "email": "Email",
+    "saveChanges": "Save Changes",
+    "session": "Session",
+    "signOut": "Sign Out",
+    "signOutDesc": "Log out of your account on this device",
+    "logOut": "Log Out",
+    "advancedDescription": "Developer tools and system maintenance",
+    "applicationLogs": "Application Logs",
+    "applicationLogsDesc": "View local log files for troubleshooting",
+    "openFolder": "Open Folder",
+    "databaseHealth": "Database Health",
+    "databaseHealthDesc": "Verify SQLite connection status",
+    "checkConnection": "Check Connection",
+    "dangerZone": "Danger Zone",
+    "dangerZoneDesc": "Irreversible actions",
+    "resetDatabase": "Reset Database",
+    "resetDatabaseDesc": "Clear all local data and reset app state",
+    "resetData": "Reset Data",
+    "comingSoon": "Coming Soon",
+    "underConstruction": "This section is under construction",
+    "openFolderSuccess": "Log folder opened",
+    "openFolderError": "Failed to open log folder"
+  },
+  "users": {
+    "title": "User Management",
+    "actions": {
+      "add": "Add User"
+    },
+    "dialog": {
+      "title": "Create New User",
+      "description": "Add a new user to the system."
+    },
+    "form": {
+      "username": "Username",
+      "usernamePlaceholder": "johndoe",
+      "email": "Email",
+      "emailPlaceholder": "john@example.com",
+      "submit": "Create User",
+      "submitting": "Creating...",
+      "success": "User created successfully",
+      "error": "Failed to create user",
+      "validation": {
+        "usernameMin": "Username must be at least 2 characters",
+        "emailInvalid": "Invalid email address"
+      }
+    },
+    "table": {
+      "columns": {
+        "user": "User",
+        "role": "Role",
+        "joined": "Joined"
+      },
+      "actions": {
+        "openMenu": "Open menu",
+        "delete": "Delete",
+        "deleteSuccess": "User deleted",
+        "deleteError": "Failed: {{message}}"
+      },
+      "loading": "Loading users..."
+    }
+  }
+}

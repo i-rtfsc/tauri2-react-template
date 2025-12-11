@@ -1,0 +1,52 @@
+[package]
+name = "tauri-react-template"
+version = "0.1.0"
+description = "A Tauri 2 + React template with DDD architecture"
+authors = ["Your Name"]
+edition = "2021"
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+# Tauri
+tauri = { version = "2", features = ["protocol-asset", "tray-icon"] }
+tauri-plugin-fs = "2"
+tauri-plugin-shell = "2"
+tauri-plugin-dialog = "2"
+tauri-plugin-opener = "2"
+
+# Async runtime
+tokio = { version = "1", features = ["full"] }
+
+# Serialization
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+
+# Error handling
+thiserror = "1"
+anyhow = "1"
+
+# Logging (Tracing Ecosystem)
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter", "json", "time", "local-time", "registry"] }
+tracing-appender = "0.2"
+time = { version = "0.3", features = ["formatting", "macros", "local-offset"] }
+
+# Database (SQLite + SQLx)
+sqlx = { version = "0.8", features = ["runtime-tokio", "tls-rustls", "sqlite"] }
+async-trait = "0.1.89"
+tauri-plugin-window-state = "2.4.1"
+tauri-plugin-single-instance = { version = "2.3.6", features = ["deep-link"] }
+reqwest = { version = "0.12.25", features = ["json", "rustls-tls", "stream"] }
+uuid = { version = "1.19.0", features = ["v4", "fast-rng", "macro-diagnostics"] }
+
+[features]
+default = ["custom-protocol"]
+custom-protocol = ["tauri/custom-protocol"]
+
+# Binary configuration
+[[bin]]
+name = "tauri-react-template"
+# Default is src/main.rs, which is what we want now.
+path = "src/main.rs"
